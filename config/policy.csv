@@ -1,0 +1,3 @@
+p, ADMIN|MODERATOR, /v1/products, POST
+p, ADMIN|MODERATOR, /v1/products/*, PATCH
+p, ADMIN, /v1/products/*, DELETE
