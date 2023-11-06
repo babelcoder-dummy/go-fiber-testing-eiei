@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "golang.go"
+        "ms-vscode.makefile-tools",
+        "alexcvzz.vscode-sqlite"
     ]
 }
