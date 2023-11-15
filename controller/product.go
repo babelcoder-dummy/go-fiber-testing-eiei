@@ -15,7 +15,7 @@ import (
 var validate = validator.New()
 
 type Product struct {
-	Service service.Product
+	Service service.Producter
 }
 
 func (p *Product) Create(c *fiber.Ctx) error {

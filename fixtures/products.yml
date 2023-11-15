@@ -1,0 +1,16 @@
+- id: 2
+  name: Product 2
+  desc: Desc 2
+  price: 20
+  slug: product-2
+  image: https://image.com
+  created_at: RAW=NOW()
+  updated_at: RAW=NOW()
+- id: 1
+  name: Product 1
+  desc: Desc 1
+  price: 10
+  slug: product-1
+  image: https://image.com
+  created_at: RAW=NOW()
+  updated_at: RAW=NOW()

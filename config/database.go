@@ -4,7 +4,7 @@ import (
 	"log"
 
 	"github.com/babelcoder-enterprise-courses/go-fiber-testing/model"
-	"gorm.io/driver/sqlite"
+	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
 
@@ -12,7 +12,7 @@ var DB *gorm.DB
 
 func InitDB() {
 	var err error
-	DB, err = gorm.Open(sqlite.Open(Env.DatabaseURL))
+	DB, err = gorm.Open(postgres.New(postgres.Config{DSN: Env.DatabaseURL}))
 	if err != nil {
 		log.Panic("failed to connect database")
 	}

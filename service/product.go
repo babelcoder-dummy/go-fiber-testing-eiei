@@ -11,7 +11,7 @@ import (
 )
 
 type Product struct {
-	Repository repository.Product
+	Repository repository.Producter
 	Storage    Storage
 }
 

@@ -26,10 +26,10 @@ func setupV1(app *fiber.App) {
 	})
 
 	// Services
-	productService := service.Product{Repository: productRepository}
+	productService := service.Product{Repository: &productRepository}
 	authService := service.Auth{UserRepository: userRepository}
 
-	productController := controller.Product{Service: productService}
+	productController := controller.Product{Service: &productService}
 	productGroup := v1.Group("products")
 	{
 		productGroup.Get("", productController.FindAll)
